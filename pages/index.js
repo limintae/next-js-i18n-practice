@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 
@@ -12,7 +12,7 @@ export const getStaticProps = async ({ locale }) => {
 };
 
 export default function Home() {
-  const { t } = useTranslation("common");  
+  const { t } = useTranslation("common");
 
   return (
     <div className="main-wrap">
@@ -27,5 +27,5 @@ export default function Home() {
         </Link>
       </div>
     </div>
-  )
+  );
 }
