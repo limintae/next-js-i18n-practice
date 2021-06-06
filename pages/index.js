@@ -15,7 +15,7 @@ export default function Home() {
   const { t } = useTranslation("common");  
 
   return (
-    <div>
+    <div className="main-wrap">
       <h1>NextJS i18n practice</h1>
       <p>{t("header-message")}</p>
       <div>
